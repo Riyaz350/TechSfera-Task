@@ -40,6 +40,7 @@ export default async function page() {
                         time="17:00"
                         author={post?.author.name}
                     />
+                    
                 </div>
             ))}
         </div>
