@@ -1,6 +1,6 @@
 import React from 'react';
-import prisma from '../../lib/prisma';
 import DeletePost from './DeletePost';
+import prisma from '@/lib/prisma';
 
 async function getPosts() {
     const posts = prisma?.post.findMany({

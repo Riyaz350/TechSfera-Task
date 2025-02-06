@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-import prisma from '../lib/prisma';
 import Link from 'next/link';
+import prisma from '@/lib/prisma';
 
 async function getPosts() {
     const posts = await prisma?.post.findMany({
